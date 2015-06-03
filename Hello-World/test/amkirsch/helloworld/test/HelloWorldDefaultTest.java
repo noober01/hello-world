@@ -23,5 +23,8 @@ public class HelloWorldDefaultTest {
     public void SmokeScreen(){
         HelloWorld hw = new HelloWorld("Hallo World!");
         assertEquals(hw.getMessage(), "Hallo World!");
+        
+        HelloWorld hwDefault = new HelloWorld();
+        assertEquals(hwDefault.getMessage(), "Hello World!");
     }
 }
